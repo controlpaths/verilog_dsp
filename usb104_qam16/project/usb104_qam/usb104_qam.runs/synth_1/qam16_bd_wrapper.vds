@@ -1,0 +1,448 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sat Dec  3 11:10:05 2022
+# Process ID: 123334
+# Current directory: /home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.runs/synth_1
+# Command line: vivado -log qam16_bd_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source qam16_bd_wrapper.tcl
+# Log file: /home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.runs/synth_1/qam16_bd_wrapper.vds
+# Journal file: /home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.runs/synth_1/vivado.jou
+# Running On: friday, OS: Linux, CPU Frequency: 2200.000 MHz, CPU Physical cores: 16, Host memory: 25101 MB
+#-----------------------------------------------------------
+source qam16_bd_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/media/pablo/data_m2/xilinx/Vivado/2022.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental /home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.srcs/utils_1/imports/synth_1/qam16_bd_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.srcs/utils_1/imports/synth_1/qam16_bd_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top qam16_bd_wrapper -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 123434
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/media/pablo/data_m2/xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2019.430 ; gain = 362.734 ; free physical = 7402 ; free virtual = 17263
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1427.242; parent = 1215.216; children = 212.026
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3021.812; parent = 2023.402; children = 998.410
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'qam16_bd_wrapper' [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/hdl/qam16_bd_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'qam16_bd' [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/synth/qam16_bd.v:12]
+INFO: [Synth 8-6157] synthesizing module 'qam16_bd_axis_zmod_dac_v1_0_0_0' [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.runs/synth_1/.Xil/Vivado-123334-friday/realtime/qam16_bd_axis_zmod_dac_v1_0_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'qam16_bd_axis_zmod_dac_v1_0_0_0' (0#1) [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.runs/synth_1/.Xil/Vivado-123334-friday/realtime/qam16_bd_axis_zmod_dac_v1_0_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 's_axis_tready' of module 'qam16_bd_axis_zmod_dac_v1_0_0_0' is unconnected for instance 'axis_zmod_dac_v1_0_0' [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/synth/qam16_bd.v:80]
+WARNING: [Synth 8-7023] instance 'axis_zmod_dac_v1_0_0' of module 'qam16_bd_axis_zmod_dac_v1_0_0_0' has 15 connections declared, but only 14 given [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/synth/qam16_bd.v:80]
+INFO: [Synth 8-6157] synthesizing module 'qam16_bd_clk_wiz_0_0' [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.runs/synth_1/.Xil/Vivado-123334-friday/realtime/qam16_bd_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'qam16_bd_clk_wiz_0_0' (0#1) [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.runs/synth_1/.Xil/Vivado-123334-friday/realtime/qam16_bd_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'qam16_bd_fir_compiler_0_0' [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.runs/synth_1/.Xil/Vivado-123334-friday/realtime/qam16_bd_fir_compiler_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'qam16_bd_fir_compiler_0_0' (0#1) [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.runs/synth_1/.Xil/Vivado-123334-friday/realtime/qam16_bd_fir_compiler_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'qam16_bd_fir_compiler_0_1' [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.runs/synth_1/.Xil/Vivado-123334-friday/realtime/qam16_bd_fir_compiler_0_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'qam16_bd_fir_compiler_0_1' (0#1) [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.runs/synth_1/.Xil/Vivado-123334-friday/realtime/qam16_bd_fir_compiler_0_1_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axis_data_tvalid' of module 'qam16_bd_fir_compiler_0_1' is unconnected for instance 'fir_compiler_1' [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/synth/qam16_bd.v:106]
+WARNING: [Synth 8-7023] instance 'fir_compiler_1' of module 'qam16_bd_fir_compiler_0_1' has 6 connections declared, but only 5 given [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/synth/qam16_bd.v:106]
+INFO: [Synth 8-6157] synthesizing module 'qam16_bd_oddr_0_0' [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.runs/synth_1/.Xil/Vivado-123334-friday/realtime/qam16_bd_oddr_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'qam16_bd_oddr_0_0' (0#1) [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.runs/synth_1/.Xil/Vivado-123334-friday/realtime/qam16_bd_oddr_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'qam16_bd_qam16_data_generator_0_0' [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.runs/synth_1/.Xil/Vivado-123334-friday/realtime/qam16_bd_qam16_data_generator_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'qam16_bd_qam16_data_generator_0_0' (0#1) [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.runs/synth_1/.Xil/Vivado-123334-friday/realtime/qam16_bd_qam16_data_generator_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'qam16_bd_qam16_data_packet_0_0' [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.runs/synth_1/.Xil/Vivado-123334-friday/realtime/qam16_bd_qam16_data_packet_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'qam16_bd_qam16_data_packet_0_0' (0#1) [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.runs/synth_1/.Xil/Vivado-123334-friday/realtime/qam16_bd_qam16_data_packet_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'qam16_bd_qam16_data_upsampler_0_0' [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.runs/synth_1/.Xil/Vivado-123334-friday/realtime/qam16_bd_qam16_data_upsampler_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'qam16_bd_qam16_data_upsampler_0_0' (0#1) [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.runs/synth_1/.Xil/Vivado-123334-friday/realtime/qam16_bd_qam16_data_upsampler_0_0_stub.v:5]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/synth/qam16_bd.v:142]
+INFO: [Synth 8-6157] synthesizing module 'qam16_bd_system_ila_0_0' [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.runs/synth_1/.Xil/Vivado-123334-friday/realtime/qam16_bd_system_ila_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'qam16_bd_system_ila_0_0' (0#1) [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.runs/synth_1/.Xil/Vivado-123334-friday/realtime/qam16_bd_system_ila_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'qam16_bd_xlconcat_0_0' [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/ip/qam16_bd_xlconcat_0_0/synth/qam16_bd_xlconcat_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (0#1) [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'qam16_bd_xlconcat_0_0' (0#1) [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/ip/qam16_bd_xlconcat_0_0/synth/qam16_bd_xlconcat_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'qam16_bd_xlslice_0_0' [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/ip/qam16_bd_xlslice_0_0/synth/qam16_bd_xlslice_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (0#1) [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'qam16_bd_xlslice_0_0' (0#1) [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/ip/qam16_bd_xlslice_0_0/synth/qam16_bd_xlslice_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'qam16_bd_xlslice_0_1' [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/ip/qam16_bd_xlslice_0_1/synth/qam16_bd_xlslice_0_1.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'qam16_bd_xlslice_0_1' (0#1) [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/ip/qam16_bd_xlslice_0_1/synth/qam16_bd_xlslice_0_1.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'qam16_bd' (0#1) [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/synth/qam16_bd.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'qam16_bd_wrapper' (0#1) [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/hdl/qam16_bd_wrapper.v:12]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'fir_compiler_0'. This will prevent further optimization [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/synth/qam16_bd.v:99]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'system_ila_0'. This will prevent further optimization [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/synth/qam16_bd.v:142]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'qam16_data_upsampler_0'. This will prevent further optimization [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/synth/qam16_bd.v:130]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axis_zmod_dac_v1_0_0'. This will prevent further optimization [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/synth/qam16_bd.v:80]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'fir_compiler_1'. This will prevent further optimization [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/synth/qam16_bd.v:106]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'xlslice_0'. This will prevent further optimization [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/synth/qam16_bd.v:155]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'xlconcat_0'. This will prevent further optimization [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/synth/qam16_bd.v:151]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'xlslice_1'. This will prevent further optimization [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/synth/qam16_bd.v:158]
+WARNING: [Synth 8-7129] Port Din[39] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[38] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[37] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[20] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[19] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[18] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[17] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[16] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[15] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[14] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[13] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[12] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[11] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[10] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[9] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[8] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[7] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[6] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[5] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[4] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[3] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[2] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[1] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In2[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In3[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In4[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In5[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In6[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In7[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In8[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In9[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In10[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In11[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In12[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In13[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In14[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In15[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In16[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In17[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In20[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In21[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In22[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In25[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In26[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In27[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In28[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In29[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In32[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In33[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In34[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In35[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In36[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In37[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In38[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In39[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In40[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In41[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In42[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In43[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In44[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In45[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In46[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In47[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In48[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In49[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In50[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In51[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In52[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In53[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In54[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In55[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In56[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In57[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In58[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In59[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In60[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In61[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In62[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In63[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In64[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In65[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In66[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In67[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In68[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In69[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In70[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In71[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In72[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In73[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In74[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In75[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In76[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In77[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2093.367 ; gain = 436.672 ; free physical = 7488 ; free virtual = 17349
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1427.242; parent = 1215.216; children = 212.026
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3091.781; parent = 2093.371; children = 998.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2108.211 ; gain = 451.516 ; free physical = 7488 ; free virtual = 17349
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1427.242; parent = 1215.216; children = 212.026
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3106.625; parent = 2108.215; children = 998.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2108.211 ; gain = 451.516 ; free physical = 7488 ; free virtual = 17349
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1427.242; parent = 1215.216; children = 212.026
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3106.625; parent = 2108.215; children = 998.410
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2108.211 ; gain = 0.000 ; free physical = 7483 ; free virtual = 17345
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/ip/qam16_bd_fir_compiler_0_0/qam16_bd_fir_compiler_0_0/qam16_bd_fir_compiler_0_1_in_context.xdc] for cell 'qam16_bd_i/fir_compiler_0'
+Finished Parsing XDC File [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/ip/qam16_bd_fir_compiler_0_0/qam16_bd_fir_compiler_0_0/qam16_bd_fir_compiler_0_1_in_context.xdc] for cell 'qam16_bd_i/fir_compiler_0'
+Parsing XDC File [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/ip/qam16_bd_fir_compiler_0_1/qam16_bd_fir_compiler_0_1/qam16_bd_fir_compiler_0_1_in_context.xdc] for cell 'qam16_bd_i/fir_compiler_1'
+Finished Parsing XDC File [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/ip/qam16_bd_fir_compiler_0_1/qam16_bd_fir_compiler_0_1/qam16_bd_fir_compiler_0_1_in_context.xdc] for cell 'qam16_bd_i/fir_compiler_1'
+Parsing XDC File [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/ip/qam16_bd_clk_wiz_0_0/qam16_bd_clk_wiz_0_0/qam16_bd_clk_wiz_0_0_in_context.xdc] for cell 'qam16_bd_i/clk_wiz_0'
+Finished Parsing XDC File [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/ip/qam16_bd_clk_wiz_0_0/qam16_bd_clk_wiz_0_0/qam16_bd_clk_wiz_0_0_in_context.xdc] for cell 'qam16_bd_i/clk_wiz_0'
+Parsing XDC File [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/ip/qam16_bd_qam16_data_packet_0_0/qam16_bd_qam16_data_packet_0_0/qam16_bd_qam16_data_packet_0_0_in_context.xdc] for cell 'qam16_bd_i/qam16_data_packet_0'
+Finished Parsing XDC File [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/ip/qam16_bd_qam16_data_packet_0_0/qam16_bd_qam16_data_packet_0_0/qam16_bd_qam16_data_packet_0_0_in_context.xdc] for cell 'qam16_bd_i/qam16_data_packet_0'
+Parsing XDC File [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/ip/qam16_bd_system_ila_0_0/qam16_bd_system_ila_0_0/qam16_bd_system_ila_0_0_in_context.xdc] for cell 'qam16_bd_i/system_ila_0'
+Finished Parsing XDC File [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/ip/qam16_bd_system_ila_0_0/qam16_bd_system_ila_0_0/qam16_bd_system_ila_0_0_in_context.xdc] for cell 'qam16_bd_i/system_ila_0'
+Parsing XDC File [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/ip/qam16_bd_qam16_data_generator_0_0/qam16_bd_qam16_data_generator_0_0/qam16_bd_qam16_data_generator_0_0_in_context.xdc] for cell 'qam16_bd_i/qam16_data_generator_0'
+Finished Parsing XDC File [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/ip/qam16_bd_qam16_data_generator_0_0/qam16_bd_qam16_data_generator_0_0/qam16_bd_qam16_data_generator_0_0_in_context.xdc] for cell 'qam16_bd_i/qam16_data_generator_0'
+Parsing XDC File [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/ip/qam16_bd_qam16_data_upsampler_0_0/qam16_bd_qam16_data_upsampler_0_0/qam16_bd_qam16_data_upsampler_0_0_in_context.xdc] for cell 'qam16_bd_i/qam16_data_upsampler_0'
+Finished Parsing XDC File [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/ip/qam16_bd_qam16_data_upsampler_0_0/qam16_bd_qam16_data_upsampler_0_0/qam16_bd_qam16_data_upsampler_0_0_in_context.xdc] for cell 'qam16_bd_i/qam16_data_upsampler_0'
+Parsing XDC File [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/ip/qam16_bd_oddr_0_0/qam16_bd_oddr_0_0/qam16_bd_oddr_0_0_in_context.xdc] for cell 'qam16_bd_i/oddr_0'
+Finished Parsing XDC File [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/ip/qam16_bd_oddr_0_0/qam16_bd_oddr_0_0/qam16_bd_oddr_0_0_in_context.xdc] for cell 'qam16_bd_i/oddr_0'
+Parsing XDC File [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/ip/qam16_bd_axis_zmod_dac_v1_0_0_0/qam16_bd_axis_zmod_dac_v1_0_0_0/qam16_bd_axis_zmod_dac_v1_0_0_0_in_context.xdc] for cell 'qam16_bd_i/axis_zmod_dac_v1_0_0'
+Finished Parsing XDC File [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/ip/qam16_bd_axis_zmod_dac_v1_0_0_0/qam16_bd_axis_zmod_dac_v1_0_0_0/qam16_bd_axis_zmod_dac_v1_0_0_0_in_context.xdc] for cell 'qam16_bd_i/axis_zmod_dac_v1_0_0'
+Parsing XDC File [/home/pablo/git/verilog_dsp/drivers/zmod_dac/xdc/zmod_dac_usb104.xdc]
+Finished Parsing XDC File [/home/pablo/git/verilog_dsp/drivers/zmod_dac/xdc/zmod_dac_usb104.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/pablo/git/verilog_dsp/drivers/zmod_dac/xdc/zmod_dac_usb104.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/qam16_bd_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/qam16_bd_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2164.074 ; gain = 0.000 ; free physical = 7398 ; free virtual = 17260
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2164.074 ; gain = 0.000 ; free physical = 7398 ; free virtual = 17260
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/media/pablo/data_m2/xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2164.074 ; gain = 507.379 ; free physical = 7459 ; free virtual = 17321
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1427.242; parent = 1215.216; children = 212.026
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3130.473; parent = 2132.062; children = 998.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2164.074 ; gain = 507.379 ; free physical = 7459 ; free virtual = 17321
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1427.242; parent = 1215.216; children = 212.026
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3130.473; parent = 2132.062; children = 998.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  /home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/ip/qam16_bd_clk_wiz_0_0/qam16_bd_clk_wiz_0_0/qam16_bd_clk_wiz_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  /home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.gen/sources_1/bd/qam16_bd/ip/qam16_bd_clk_wiz_0_0/qam16_bd_clk_wiz_0_0/qam16_bd_clk_wiz_0_0_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for qam16_bd_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for qam16_bd_i/fir_compiler_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for qam16_bd_i/fir_compiler_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for qam16_bd_i/clk_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for qam16_bd_i/qam16_data_packet_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for qam16_bd_i/system_ila_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for qam16_bd_i/qam16_data_generator_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for qam16_bd_i/qam16_data_upsampler_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for qam16_bd_i/xlslice_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for qam16_bd_i/xlslice_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for qam16_bd_i/xlconcat_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for qam16_bd_i/oddr_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for qam16_bd_i/axis_zmod_dac_v1_0_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2164.074 ; gain = 507.379 ; free physical = 7459 ; free virtual = 17321
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1427.242; parent = 1215.216; children = 212.026
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3130.473; parent = 2132.062; children = 998.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2164.074 ; gain = 507.379 ; free physical = 7459 ; free virtual = 17322
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1427.242; parent = 1215.216; children = 212.026
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3130.473; parent = 2132.062; children = 998.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2164.074 ; gain = 507.379 ; free physical = 7447 ; free virtual = 17314
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1427.242; parent = 1215.216; children = 212.026
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3130.473; parent = 2132.062; children = 998.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2164.074 ; gain = 507.379 ; free physical = 7332 ; free virtual = 17198
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1510.312; parent = 1299.034; children = 212.026
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3130.473; parent = 2132.062; children = 998.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2164.074 ; gain = 507.379 ; free physical = 7332 ; free virtual = 17198
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1510.438; parent = 1299.190; children = 212.026
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3130.473; parent = 2132.062; children = 998.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2164.074 ; gain = 507.379 ; free physical = 7328 ; free virtual = 17194
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1511.488; parent = 1300.241; children = 212.026
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3130.473; parent = 2132.062; children = 998.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2164.074 ; gain = 507.379 ; free physical = 7328 ; free virtual = 17194
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1511.488; parent = 1300.241; children = 212.026
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3130.473; parent = 2132.062; children = 998.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2164.074 ; gain = 507.379 ; free physical = 7328 ; free virtual = 17194
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1511.488; parent = 1300.241; children = 212.026
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3130.473; parent = 2132.062; children = 998.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2164.074 ; gain = 507.379 ; free physical = 7328 ; free virtual = 17194
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1511.488; parent = 1300.241; children = 212.026
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3130.473; parent = 2132.062; children = 998.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2164.074 ; gain = 507.379 ; free physical = 7328 ; free virtual = 17194
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1511.488; parent = 1300.241; children = 212.026
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3130.473; parent = 2132.062; children = 998.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2164.074 ; gain = 507.379 ; free physical = 7328 ; free virtual = 17194
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1511.488; parent = 1300.241; children = 212.026
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3130.473; parent = 2132.062; children = 998.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2164.074 ; gain = 507.379 ; free physical = 7328 ; free virtual = 17194
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1511.488; parent = 1300.241; children = 212.026
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3130.473; parent = 2132.062; children = 998.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------------+----------+
+|      |BlackBox name                     |Instances |
++------+----------------------------------+----------+
+|1     |qam16_bd_axis_zmod_dac_v1_0_0_0   |         1|
+|2     |qam16_bd_clk_wiz_0_0              |         1|
+|3     |qam16_bd_fir_compiler_0_0         |         1|
+|4     |qam16_bd_fir_compiler_0_1         |         1|
+|5     |qam16_bd_oddr_0_0                 |         1|
+|6     |qam16_bd_qam16_data_generator_0_0 |         1|
+|7     |qam16_bd_qam16_data_packet_0_0    |         1|
+|8     |qam16_bd_qam16_data_upsampler_0_0 |         1|
+|9     |qam16_bd_system_ila_0_0           |         1|
++------+----------------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------------+------+
+|      |Cell                            |Count |
++------+--------------------------------+------+
+|1     |qam16_bd_axis_zmod_dac_v1_0_0   |     1|
+|2     |qam16_bd_clk_wiz_0              |     1|
+|3     |qam16_bd_fir_compiler_0         |     2|
+|5     |qam16_bd_oddr_0                 |     1|
+|6     |qam16_bd_qam16_data_generator_0 |     1|
+|7     |qam16_bd_qam16_data_packet_0    |     1|
+|8     |qam16_bd_qam16_data_upsampler_0 |     1|
+|9     |qam16_bd_system_ila_0           |     1|
+|10    |OBUF                            |    23|
++------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2164.074 ; gain = 507.379 ; free physical = 7328 ; free virtual = 17194
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1511.488; parent = 1300.241; children = 212.026
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3130.473; parent = 2132.062; children = 998.410
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 49 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2164.074 ; gain = 451.516 ; free physical = 7383 ; free virtual = 17249
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2164.074 ; gain = 507.379 ; free physical = 7383 ; free virtual = 17249
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2164.074 ; gain = 0.000 ; free physical = 7484 ; free virtual = 17351
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2164.074 ; gain = 0.000 ; free physical = 7425 ; free virtual = 17292
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 9c6d9a5b
+INFO: [Common 17-83] Releasing license: Synthesis
+65 Infos, 106 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2164.074 ; gain = 681.375 ; free physical = 7627 ; free virtual = 17494
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+INFO: [Common 17-1381] The checkpoint '/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.runs/synth_1/qam16_bd_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file qam16_bd_wrapper_utilization_synth.rpt -pb qam16_bd_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Dec  3 11:10:28 2022...

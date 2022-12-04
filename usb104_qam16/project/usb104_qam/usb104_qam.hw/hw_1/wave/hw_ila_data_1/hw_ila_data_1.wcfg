@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/pablo/git/verilog_dsp/usb104_qam16/project/usb104_qam/usb104_qam.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0"></ZoomStartTime>
+      <ZoomEndTime time="16,385"></ZoomEndTime>
+      <Cursor1Time time="8,446"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="323"></NameColumnWidth>
+      <ValueColumnWidth column_width="116"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="12" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject type="logic" fp_name="qam16_bd_i/system_ila_0/inst/probe0_1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">qam16_bd_i/system_ila_0/inst/probe0_1</obj_property>
+      <obj_property name="ObjectShortName">probe0_1</obj_property>
+      <obj_property name="label">m_axis_data_tvalid</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="qam16_bd_i/system_ila_0/inst/probe1_1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">qam16_bd_i/system_ila_0/inst/probe1_1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">probe1_1[15:0]</obj_property>
+      <obj_property name="label">m_axis_imag_tdata</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="qam16_bd_i/system_ila_0/inst/probe2_1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">qam16_bd_i/system_ila_0/inst/probe2_1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">probe2_1[15:0]</obj_property>
+      <obj_property name="label">m_axis_real_tdata</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="qam16_bd_i/system_ila_0/inst/probe3_1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">qam16_bd_i/system_ila_0/inst/probe3_1</obj_property>
+      <obj_property name="ObjectShortName">probe3_1</obj_property>
+      <obj_property name="label">qam16_data_upsampler_0_m_axis_imag_tvalid</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="qam16_bd_i/system_ila_0/inst/probe4_1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">qam16_bd_i/system_ila_0/inst/probe4_1</obj_property>
+      <obj_property name="ObjectShortName">probe4_1</obj_property>
+      <obj_property name="label">fir_compiler_0_s_axis_data_tready</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="qam16_bd_i/system_ila_0/inst/probe5_1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">qam16_bd_i/system_ila_0/inst/probe5_1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">probe5_1[15:0]</obj_property>
+      <obj_property name="label">xlslice_1_Dout</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="qam16_bd_i/system_ila_0/inst/probe6_1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">qam16_bd_i/system_ila_0/inst/probe6_1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">probe6_1[15:0]</obj_property>
+      <obj_property name="label">xlslice_0_Dout</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="qam16_bd_i/system_ila_0/inst/probe0_1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">qam16_bd_i/system_ila_0/inst/probe0_1</obj_property>
+      <obj_property name="ObjectShortName">probe0_1</obj_property>
+      <obj_property name="label">m_axis_data_tvalid</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="qam16_bd_i/system_ila_0/inst/probe1_1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">qam16_bd_i/system_ila_0/inst/probe1_1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">probe1_1[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">m_axis_imag_tdata</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="qam16_bd_i/system_ila_0/inst/probe2_1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">qam16_bd_i/system_ila_0/inst/probe2_1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">probe2_1[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">m_axis_real_tdata</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="qam16_bd_i/system_ila_0/inst/probe3_1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">qam16_bd_i/system_ila_0/inst/probe3_1</obj_property>
+      <obj_property name="ObjectShortName">probe3_1</obj_property>
+      <obj_property name="label">qam16_data_upsampler_0_m_axis_imag_tvalid</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="qam16_bd_i/system_ila_0/inst/probe4_1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">qam16_bd_i/system_ila_0/inst/probe4_1</obj_property>
+      <obj_property name="ObjectShortName">probe4_1</obj_property>
+      <obj_property name="label">fir_compiler_0_s_axis_data_tready</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>

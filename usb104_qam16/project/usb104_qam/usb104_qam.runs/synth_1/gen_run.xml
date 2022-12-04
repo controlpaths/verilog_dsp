@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1670062180" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/qam16_bd_wrapper.dcp">
+  <File Type="VDS-TIMINGSUMMARY" Name="qam16_bd_wrapper_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="qam16_bd_wrapper.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="qam16_bd_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="qam16_bd_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="qam16_bd_wrapper_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="qam16_bd_wrapper.vds"/>
+  <File Type="REPORTS-TCL" Name="qam16_bd_wrapper_reports.tcl"/>
+  <File Type="VDS-TIMING-PB" Name="qam16_bd_wrapper_timing_summary_synth.pb"/>
+  <File Type="PA-TCL" Name="qam16_bd_wrapper.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../../src/qam16_data_packet.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/qam16_data_generator.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/qam16_data_upsampler.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../drivers/zmod_dac/src/axis_zmod_dac_v1_0.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/qam16_bd/qam16_bd.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/qam16_bd/hdl/qam16_bd_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../workspace/matlab/qam16/rcos_coeff.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="qam16_bd_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../../../drivers/zmod_dac/xdc/zmod_dac_usb104.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/qam16_bd_wrapper.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="qam16_bd_qam16_data_upsampler_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="qam16_bd_axis_zmod_dac_v1_0_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="qam16_bd_oddr_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="qam16_bd_fir_compiler_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="qam16_bd_qam16_data_packet_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="qam16_bd_fir_compiler_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="qam16_bd_clk_wiz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="qam16_bd_qam16_data_generator_0_0"/>
+</GenRun>
